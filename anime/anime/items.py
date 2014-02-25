@@ -17,6 +17,8 @@ from scrapy.item import Item, Field
 #     related,
 #     characters
 # }
+
+
 class AnimeItem(Item):
     url = Field()
     image = Field()
@@ -24,4 +26,3 @@ class AnimeItem(Item):
     jp_info = Field()
     description = Field()
     pass
-

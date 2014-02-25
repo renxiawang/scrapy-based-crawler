@@ -2,9 +2,10 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import json
+
 
 class AnimePipeline(object):
+
     def process_item(self, item, spider):
         if u"us_info" in item:
             for (k, v) in item[u"us_info"].items():

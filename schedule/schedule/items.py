@@ -5,13 +5,9 @@
 
 from scrapy.item import Item, Field
 
+
 class ScheduleItem(Item):
     home = Field()
     away = Field()
     date = Field()
     time = Field()
-
-class TestItem(Item):
-    # define the fields for your item here like:
-    # name = Field()
-    pass
